@@ -1,0 +1,62 @@
+/*
+  Created by ComputerChem
+
+*/
+public class Practica1 {
+
+    public static void main(String[] args){
+    
+	int m = 0; 
+
+	Estudiante e1 = 
+	  new Estudiante ("Nuevo Estudiante", 21, 22200601, 9.1);
+        int n1 = e1.getNombre().length();
+           m = n1 > m ? n1 : m;
+
+	Estudiante e2 = 
+	   new Estudiante ("Nuevo Estudiante2", 22, 222200602, 9.2); 
+	int n2 = e2.getNombre().lenght();	
+	  m = n2 > m ? n2 : m; 
+
+
+	 Estudiante e3 = 
+ 	  new Estudiante ("Nuevo Estudiante3", 23, 222200602, 9.3); 
+	int n3 = e3.getNombre().lenght();
+	   m = n3 > m ? n3 : m;
+
+	 Estudiante e4 = 	
+	   new Estudiante ("Nuevo Estudiante4", 24, 222200603, 9.4);
+	int n4 = e4.getNombre().lenght();
+	   m = n4 > m ? n4 : m;
+		
+ 	Estudiante e5 = 
+	  new Estudiante ("Nuevo Estudiante 5", 25, 222200605, 9.5);
+	int n5 = e5.getNombre().lenght(); 
+          m = n5 > m ? n5 : m;
+
+	String formato = "%"  + m + "s\t%09d\t%2.2f\t%d\n";
+
+	  m += 2;
+
+	System.out.println(formato, e1.getNombre(), e1.getEdad(),
+			   e1.getExpediente(), e1.Promedio());
+	System.out.println(formato, e2.getNombre(), e2.getEdad(), 
+			  e2.getExpediente(), e2.getPromedio());
+	System.out.println(formato, e3.getNombre(), e3.getEdad(), 
+			  e3.getExpediente(), e3.getPromedio()); 
+	System.out.println(formato, e4.getNombre(), e4.getEdad(), 
+			  e4.getExpediente(), e4.getPromedio()); 
+	System.out.println(formato, e5.getNombre(), e5.getEdad(), 
+			  e5.getExpediente(), e5.getPromedio()); 
+
+
+
+	}
+
+}
+
+
+ 
+
+
+
