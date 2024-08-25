@@ -1,124 +1,94 @@
-/*
+/**
 
-  Created by ComputerChem
+   Created by ComputerChem
+
 
 */
 
-
+/**
+ * Clase para representar estudiantes. Un estudiante tiene nombre, número de
+ * cuenta, promedio y edad.
+ */
 public class Estudiante {
 
-private String nombre;
-private int edad;
-private int expediente;
-private double promedio;
+    private String nombre;
+    private int cuenta;
+    private double promedio;
+    private int edad;
 
-   
- public Estudiante (String nombre,
-		     int edad,
-		     int expediente,
-		     double promedio){
-
-   this.nombre = nombre; 
-   this.edad = edad;
-   this.expediente = expediente;
-   this.promedio = promedio;
-   
-}
-  public String getNombre(String nombre){
-    
-     
-
-      return nombre;
-
-}
-     
- public void setNombre(String nombre){
-
-
-     this.nombre = nombre;  
-
-
-}  
-
- public int getEdad(int edad){
-     
-      return edad; 
-
-
+   public Estudiante(String nombre, int cuenta, double promedio, int edad) {
+    this.nombre = nombre;
+    this.cuenta = cuenta;
+    this.promedio = promedio;
+    this.edad = edad;
 }
 
- public void setEdad(int edad){
-
+    public String getNombre() {
       
-       this.edad = edad;
+	return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        
+	this.nombre = nombre;
+    }
 
     
+    public int getCuenta() {
+   	
+	return cuenta; 
 
- }
+    }
 
-  public void setExpediente(int expediente){
+    public void setCuenta(int cuenta) {
+    
+	this.cuenta = cuenta; 
 
-   
-     this.expediente = expediente;
+    }
 
+    public double getPromedio() {
+        
+	return promedio; 
+	
 
-}
- 
-  public static int getExpediente(int expediente){
-
-   
-      
-
-      return expediente;
+    }
 
      
- }
+    public void setPromedio(double promedio) {
 
-  public void setPromedio(double promedio){
-
-
-      this.promedio = promedio;
-
-      
- }
-
-  public double getPromedio(double promedio){
-
-
-      return promedio;
-
- }
-
-  public String toString(){
-
-
-	return nombre + edad + expediente + promedio;
-
-
- }
-    
-
-  public boolean equals(Estudiante estudiante){
-
-    if (estudiante == null) 
-
-       return false;
-
-    else 
-
-	return true;      
-   
-
+	this.promedio = promedio;
+     
   }
+
+    
+    public int getEdad() {
+
+	return edad;
+
+    }
+
+    public void setEdad(int edad) {
  
+	this.edad = edad; 
+    }
+
+ public String toString() {
+
+        return "Nombre: " + nombre + ", Cuenta: " + cuenta + ", Promedio: " + promedio + ", Edad: " + edad;
+    
  }
 
+    public boolean equals(Estudiante estudiante) {
+        if (estudiante == null)
+            return false;
+
+	else 
+	    return true;
+    }
+}
 
 
 
-   
- 
-    
 
 
 
